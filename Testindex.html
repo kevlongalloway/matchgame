@@ -1,0 +1,115 @@
+  <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="stylesheet" href="Teststyles.css">
+    <audio src="button-10.mp3" id="sound"></audio>
+    <audio src="337049__shinephoenixstormcrow__320655-rhodesmas-level-up-01.mp3" id="sound2"></audio>
+     
+</head>
+<body onload="reset()">
+    
+       
+    <div class="container">
+        <header>
+            <h1>Let's Play a Memory Game!</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul id="star-score" class="stars">
+        		<li><i class="fa fa-star star"></i></li>
+        		<li><i class="fa fa-star star"></i></li>
+        		<li><i class="fa fa-star star"></i></li>
+        	</ul>
+
+        	<span id="move-count" class="moves">0</span> Move(s)
+
+            <span id="timer">
+                00:00
+            </span>
+
+            <div id="restart">
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="memory-card-deck">
+            <li class="memory-card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="memory-card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="memory-card" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="memory-card" type="bolt" >
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="memory-card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="memory-card" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="memory-card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="memory-card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="memory-card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="memory-card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="memory-card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="memory-card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="memory-card" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="memory-card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="memory-card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="memory-card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+        
+        <div id="popup1" class="hide">
+            <div class="popup">
+                 <div class="glow">
+                    You're the bomb.com !!
+                </div>
+                <div class="stats">
+                    <p>You made <span id="finalMove"> </span>  moves </p>
+                    <p> in <span id="totalTime"> </span> </p>
+                    <p>Score:  <span id="starRating"> 
+
+                     </span></p>
+                </div>
+                <button id="play-again">
+                    Play again?
+                </button>
+                <a class="close" href= "https://www.google.com/" >Exit</a>
+            </div>
+        </div>
+
+    </div>
+   <script src="testscript.js"></script>
+</body>
+</html>
